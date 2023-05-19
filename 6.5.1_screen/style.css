@@ -1,0 +1,71 @@
+
+.all_page {
+  background-color: rgb(182, 179, 179);
+  margin: auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  background: #53555a;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  box-shadow: none;
+  cursor: grab;
+  display: flex;
+  margin: 5px 10px;
+  padding: 10px;
+  border-radius: 1px;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgb(174, 186, 141);
+  transition: 0.3s;
+}
+  
+.btn:hover {
+  box-shadow: 0px 2px 8px 2px rgba(141,150,178,.3);
+  transform: scale(1.05);
+  background: rgb(174, 186, 141);
+  color: #53555a;
+}
+
+.btn_text {
+  margin: 0 10px;
+  color: #000;
+}
+.btn_icon {
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+  text-align: center;
+}
+.show_message {
+  min-height: 50px;
+  margin: 5px 10px;
+  background: #53555a;
+  color: rgb(174, 186, 141);
+  text-align: center;
+}
+.btn--turn .btn_icon {
+  animation-duration: 1s;
+  animation-name: turn;
+  animation-iteration-count: 1;
+}
+
+@keyframes turn {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+  
