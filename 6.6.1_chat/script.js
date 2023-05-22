@@ -73,11 +73,12 @@ btn_2.addEventListener('click', () => {
           } else {
             const latitude = position.coords.latitude;
             const longitude = position.coords.longitude;
-            addMessage_1(`Ваша геолокация: https://www.openstreetmap.org/#map=14/${latitude}/${longitude}`);
+            const geo = `https://www.openstreetmap.org/#map=14/${latitude}/${longitude}`;
+            addMessage_1(`<a href="${geo}">Ваша геолокация </a>`);
             websocket.send('Ваши координаты:<br> Широта ' + latitude + '<br>Долгота ' + longitude)
         }
       })
-  } 
+  }  
 });
 
   
